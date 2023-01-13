@@ -1,0 +1,33 @@
+esphome:
+  name: goosehome_living_room_lights
+
+esp32:
+  board: nodemcu-32s
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "mrgoose"
+
+ota:
+  password: "mrgoose"
+
+wifi:
+  ssid: "MIT GUEST"
+  password: ""
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: " Fallback Hotspot"
+    password: "bByIbhXY81hL"
+
+captive_portal:
+    
+switch:
+  - platform: gpio
+    name: "Light 1"
+    pin: 5
