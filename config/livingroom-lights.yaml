@@ -1,10 +1,7 @@
 esphome:
-  name: goosehome_living_room_lights
-
-esp32:
-  board: nodemcu-32s
-  framework:
-    type: arduino
+  name: goosehome-living-room-lights
+  platform: esp32
+  board: esp32dev
 
 # Enable logging
 logger:
@@ -17,15 +14,8 @@ ota:
   password: "mrgoose"
 
 wifi:
-  ssid: "MIT GUEST"
-  password: ""
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: " Fallback Hotspot"
-    password: "bByIbhXY81hL"
-
-captive_portal:
+  ssid: "goose_esp"
+  password: "poo12345"
     
 switch:
   - platform: gpio

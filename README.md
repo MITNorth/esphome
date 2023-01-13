@@ -16,3 +16,4 @@ docker-compose up -d
 ## Resources
 
 - [ESPHome quick setup](https://esphome.io/guides/getting_started_command_line.html)
+- [ESPHome Event source api](https://esphome.io/web-api/index.html)
